@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Веб-Сайт</title>
+		<link rel ="icon" href = "images/lightbulb.ico" type = "images/x-icon">
 		<style>
 		 h3 {
     color: white; /* Цвет текста */
@@ -24,10 +25,9 @@
 		</style>
 		 <style>
    body,html {
-    background: url("Photo/background_023.jpg") no-repeat; /* Цвет фона и путь к файлу */
+    background: url("images/background_023.jpg") no-repeat; /* Цвет фона и путь к файлу */
 	-moz background-size:100%;
-	-webkit-background-size:100%;
-	-o-background-size:100%;
+@ -31,7 +30,6 @@
 	background-size:100%;
     color: #fff; /* Цвет текста */
    }
@@ -51,7 +51,7 @@
 #slides article{ /*все изображения справа друг от доруга*/
 	width: 20%;
 	float: left;
-} 
+}
 
 #slides .image{ /*устанавливает общий размер блока с изображениями*/
 	width: 500%;
@@ -187,6 +187,7 @@ label, a{ /*при наведении на стрелки или переклю�
 <form>
 Введите ваш E-mail:<input type="text" placeholder = "Почта">
 Введите ваш Пароль:<input type="password" placeholder = "Пароль">
+Подтвердите ваш Пароль:<input type="password1" placeholder = "Пароль">
 </br>
 Ваш пол:<input type="radio" name="a">Мужской <input type="radio" name="a">Женский
 </br>
@@ -204,7 +205,11 @@ label, a{ /*при наведении на стрелки или переклю�
 <option>Париж</option>
 <option>Другой город</option>
 </select>
-<button onclick = "alert('Спасибо за регистрацию')">Подтвердить</button>
+<button onclick = "if(password === password1){
+alert('Спасибо за регистрацию');
+}else{
+alert('Ваши пароли не совпадают');
+}">Подтвердить</button>
 </form>
 </fieldset>
 </center>
@@ -235,11 +240,11 @@ label, a{ /*при наведении на стрелки или переклю�
 				<div id="slides">
 					<div id="overflow">
 						<div class="image">
-							<article><img src="Photo/1.jpg"></article>
-							<article><img src="Photo/2.jpg"></article>
-							<article><img src="Photo/3.jpg"></article>
-							<article><img src="Photo/4.jpg"></article>
-							<article><img src="Photo/5.jpg"></article>
+							<article><img src="images/1.jpg"></article>
+							<article><img src="images/2.jpg"></article>
+							<article><img src="images/3.jpg"></article>
+							<article><img src="images/4.jpg"></article>
+							<article><img src="images/5.jpg"></article>
 						</div>
 					</div>
 				</div>
