@@ -175,6 +175,43 @@ label, a{ /*при наведении на стрелки или переклю�
 	transition: opacity 0.2s ease-out;
 }
   </style>
+<style>
+#image {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#image img {
+	margin: 20px;
+	border: 5px solid #eee;
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#image img:hover {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+}
+</style>
+<style>
+.ex1 img{
+    border: 5px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+.ex1 img:hover {
+    margin-top: 2px;
+}
+</style>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8"> 
 	</head>
@@ -231,6 +268,7 @@ alert('Ваши пароли не совпадают');
 		<p id ="out">Результат</p>
 		<div class="all">
 		<input checked type="radio" name="respond" id="desktop">
+		<div id = "image">
 			<article id="slider">
 					<input checked type="radio" name="slider" id="switch1">
 					<input type="radio" name="slider" id="switch2">
@@ -263,6 +301,7 @@ alert('Ваши пароли не совпадают');
 					<label for="switch5"></label>
 				</div>
 			</article>
+	</div>
 	</div>
 	<button onclick = "alert('Добро пожаловать. Это прототип русской рулетки. Удачной игры.');
 var score = 0
