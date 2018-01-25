@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Beatzzz</title>
+		<title>Веб-Сайт</title>
 		<link rel ="icon" href = "images/lightbulb.ico" type = "images/x-icon">
 		<style>
 		 h3 {
@@ -304,7 +304,7 @@ filter:alpha(opacity=100);
   <meta charset="utf-8"> 
 	</head>
 <body style="background-attachment:fixed" topmargin="0">
-<h1 align="center"><!--Веб-Сайт--> </h1>
+<h1 align="center"><!--Мой первыйВеб-Сайт--> </h1>
 <div align = "right">
 <p>Счетчик посещений</p>
 		<div id = "cnt">
@@ -322,8 +322,20 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 </script><!--/LiveInternet-->
 </div>
 </div>
+<script>
+function arr(){
+var newArray = []
+var kolvo = 0
+var max = 0
+for(var i = 0 ; i <=1000; i++){
+var k = Math.random() * 36
+if(k % 2 - 1 == -1){
+arr.push[k];
+}
 
-<!--Форма регистрации--><center>
+</script>
+<!--Форма регистрации-->
+<center>
 <fieldset>
 <legend>Регистрация</legend>
 <form>
@@ -347,14 +359,22 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 <option>Париж</option>
 <option>Другой город</option>
 </select>
-<button onclick = "alert('Спасибо за регистрацию'); ">Подтвердить</button>
+<button onclick = "if(password === password1){
+alert('Спасибо за регистрацию');
+}else{
+alert('Ваши пароли не совпадают');
+}">Подтвердить</button>
 </form>
 </fieldset>
-</center><!--Форма регистрации-->
+</center>
+<!--Форма регистрации-->
+
 <div class="text">
-	<script src="JS/calculator.js" defer></script>
-		<p><strong>Калькулятор.</strong></p>
+
 </div>
+	<script src="JS/calculator.js" defer></script>
+		<p><strong>Калькулятор</strong></p>
+		
 		<p>Число1:<input type ="text" id="n1"></p>
 		<p>Число2:<input type ="text" id="n2"></p>
 		<button onclick="plus()">+</button>
@@ -459,5 +479,6 @@ alert('Попыок пережито'+ score);">Русская рулетка</b
 				   }else{
 				   alert('Ай яй яй, нужно было вводить только цифры.')
 				   }">Оценить проект.</button>
+				   
 </body>
 </html>
